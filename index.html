@@ -33,9 +33,41 @@
         a:hover {
             text-decoration:underline;
         }
-        </style>
+        .products-container {
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .products-item {
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+        img{
+            max-width: 100%;
+            height: auto; 
+        }
 
-    </head>
+        .products-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .products-item h3 {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .products-item p {
+            color: #888;
+            font-size: 14px;
+        }
+        </style>
+        </head>
 <body>
     <header>
         <h1><p text-align="center">E-MART </p></h1>
@@ -53,11 +85,40 @@
     </marquee>
  <img src="./banner.webp" height="1500" width="1500">
  <h1> <p align="center" >Best Selling Products</p></h1>
- <a href="./Assets/LEDTV.html" ><img src="./Images/download.jpg" height="400" width="400" alt="LED TV"></a>
-  <a href="./Assets/Refrigerator.html"><img src="./Images/REF.jpg" height="400" width="400" alt="Refrigerator"></a>
- <a href="./Assets/Headphone.html"><img src="./Images/hd.jpg" height="250" width="250" alt="Headphone"></a> 
- <h1><p align="center">Trending Products</p></h1>
+ <div class="products-container">
+ <div class="products-item ">
+ <a href="./Assets/LEDTV.html" ><img src="./Images/download.jpg" alt="LED TV"></a>
+</div>
+<div class="products-item ">
+  <a href="./Assets/Refrigerator.html"><img src="./Images/REF.jpg" alt="Refrigerator"></a>
+</div>
+<div class="products-item ">
+ <a href="./Assets/Headphone.html"><img src="./Images/hd.jpg"  alt="Headphone"></a> 
+</div>
+  <div class="products-item ">
  <a href="./Assets/Roomba.html" ><img src="./Images/t1.jpg" height="300" width="500" alt="Roomba"></a>
+</div>
+<div class="products-item ">
  <a href="./Assets/Phone.html"><img src="./Images/t2.jpg" height="300" width="300" alt="Smartphone"></a> 
+</div>
+</div>
+<h1><p align="center">Trending Products</p></h1>
+<div class="products-container">
+    <div class="products-item ">
+    <a href="./Assets/LEDTV.html" ><img src="./Images/download.jpg" alt="LED TV"></a>
+   </div>
+   <div class="products-item ">
+     <a href="./Assets/Refrigerator.html"><img src="./Images/REF.jpg" alt="Refrigerator"></a>
+   </div>
+   <div class="products-item ">
+    <a href="./Assets/Headphone.html"><img src="./Images/hd.jpg"  alt="Headphone"></a> 
+   </div>
+     <div class="products-item ">
+    <a href="./Assets/Roomba.html" ><img src="./Images/t1.jpg" height="300" width="500" alt="Roomba"></a>
+   </div>
+   <div class="products-item ">
+    <a href="./Assets/Phone.html"><img src="./Images/t2.jpg" height="300" width="300" alt="Smartphone"></a> 
+   </div>
+   </div>
 </body>
 </html>
