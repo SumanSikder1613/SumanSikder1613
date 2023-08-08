@@ -1,10 +1,39 @@
-h1{
-    font-size: 50px;
-    text-align: center;
-    color: red;
+.banner h1{
+   float: left;
+   font-size: 7rem;
 }
-#Banner{
-    font-size: 50px;
+h2{
+    font-size: 40px;
     text-align: center;
-    color: bisque;
+
 }
+.Electronics{
+    color: navy;
+}
+ .banner img{
+    height: auto;
+    width: 50%;
+   float: left;
+}
+.Items{
+    clear: both;
+    height: 600px;
+    width: 100%;
+    padding: 20px; 
+    background-color: #e8f2c9;
+    border: 5px solid rgb(239, 253, 211);
+    border-radius: 2%;
+   }
+.Items h1{
+    font-size: 5rem;
+    color: #ae1616;
+    float: left;
+    
+}
+.Items img{
+    height: 400px;
+    width: 400px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 40px;
+    }
