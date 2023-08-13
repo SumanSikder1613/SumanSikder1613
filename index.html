@@ -4,31 +4,37 @@
         <meta charset="UTF-8">
         <title> Home-EMart</title>
         <style>
-            .nav{
+            header{
                 padding: 20px;
-                }
+                  }
+            .nav-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .nav-items{
+                display: flex;
+                gap: 60px;
+                    }
+            .nav-items a{
+                text-decoration: none;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: black;
+                margin-top: 20px;
+            }
+           .nav-items img{
+            height: 20px;
+            width: 180px;
+           }
+           .logo{
+            font-family: 'Anton', sans-serif ;
+           }
+           .logo .E{
+            color: red;
+            font-size: 2em;
+                   }
 
-                 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-        }
-        li{
-            display:inline-block;
-            margin-right: 50px;
-         }
-       
-        a {
-            color: black;
-            text-decoration:none;
-        }
-
-        .nav a:hover {
-        background-color:brown;
-        padding: 16px 18px;
-        }
+         
         .products-container {
             display: flex;
             flex-wrap:wrap;
@@ -62,18 +68,26 @@
             clear: both;
         }
         </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Libre+Baskerville&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles.css" />
         </head>
 <body>
-    <div class="nav">
-        <ul>
-            <li><a href="./Assets/aboutus.html">About Us</a></li>
-            <li><a href="./Assets/products.html">Products</a></li>
-            <li><a href="./Assets/Contact.html">Contact</a></li>
-            <li><a href="./Assets/checkout.html">Checkout</a></li>
-        </ul>
-    </div>
-
+    <header>
+    <div class="nav-container">
+        <div class="nav-items">
+            <div class="logo">
+            <span class="E">E</span><span class="mart">Mart</span>
+            </div>
+            <a href="./Assets/products.html">Products</a>
+            <a href="./Assets/Contact.html">Contact</a>
+            </div>
+        <div class="nav-items">
+            <a href="./Assets/checkout.html">Checkout</a>
+        </div>
+        </div>
+       </header>
     <marquee behavior="scroll" direction="left" scrollamount="5">
         Welcome to our website! This is a scrolling text example.
     </marquee>
@@ -107,10 +121,8 @@
 </div>
 <h2>Trending Products</h2>
 <div class="products-container">
-<div class="products-container">
     <div class="products-item ">
- 
-    <a href="./Assets/LEDTV.html" ><img src="./Images/download.jpg" alt="LED TV"></a>
+     <a href="./Assets/LEDTV.html" ><img src="./Images/download.jpg" alt="LED TV"></a>
    </div>
    <div class="products-item ">
      <a href="./Assets/Refrigerator.html"><img src="./Images/REF.jpg" alt="Refrigerator"></a>
